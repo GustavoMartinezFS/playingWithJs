@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #canvas2 {
+            border: 1px solid #2980b9;
+            display: none;
+        }
+
+        #text2 {
+            display: none;
+            color: #2980b9;
+        }
+
+        #original {
+            border: 1px solid #2980b9;
+        }
+
+        td {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <table border="1" style="width:80%">
+            <tbody>
+                <tr>
+                    <td colspan="2"> <input type="file" id="capturar" capture accept="image/*"> </td>
+                </tr>
+                <tr>
+                    <td> <img id="original" style="width:50%"> </td>
+                    <td> <canvas id="canvas" style="width:50%"></canvas> </td>
+                </tr>
+                <tr>
+                    <td colspan="2"> <button>Gris</button> <button>Azul</button> <button>Transparente</button> <button>Negativo</button>
+                    <button>Sepia</button> </td>
+                </tr>
+                <tr> </tr>
+            </tbody>
+        </table>
+    </center>
+    <script src="editorIMG.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registro de Autos</title>
+    <style>
+        .tbllista {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+        .control {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="divform">
+        <center>
+            <h1 id="titulo"> Nuevo Auto</h1>
+            <table>
+                <tr>
+                    <td>Marca</td>
+                    <td><input class="control" type="text" id="marca"> <input type="hidden" id="id"> </td>
+                </tr>
+                <tr>
+                    <td>Modelo</td>
+                    <td><input class="control" type="text" id="modelo"></td>
+                </tr>
+                <tr>
+                    <td>A&ntilde;o</td>
+                    <td><input class="control" type="text" id="ano"></td>
+                </tr>
+                <tr>
+                    <td>Combustible</td>
+                    <td><input class="control" type="text" id="combustible"></td>
+                </tr>
+                <tr>
+                    <td>Precio</td>
+                    <td><input class="control" type="text" id="precio"></td>
+                </tr>
+            </table> <button id="btngrabar"> Grabar</button><button id="btncancelar"> Cancelar</button>
+        </center>
+    </div>
+    <div id="divlista">
+        <h1> Listado <button id="btnadd"> Cargar Nuevo </button> </h1>
+        <table border="1" class="tbllista">
+            <caption>Autos</caption>
+            <thead>
+                <tr>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>A&ntilde;o</th>
+                    <th>Combustible</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody id="listado">
+                <tr>
+                    <td colspan="5">No hay autos que mostrar</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="registro.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Formulario con validacion en JS</title>
+    <style>
+        .control {
+            width: 99%;
+            font-family: ’Open Sans’, Arial, sans-serif;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 1.6em;
+            background-color: #fff;
+        }
+
+        .activo {
+            color: rgb(24, 7, 31);
+            background-color: rgb(0, 255, 34);
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Validaci&oacute;n de datos antes de enviarlos</h1>
+    <form name="formulario" id="formulario" style="width:30%" onsubmit="return false;">
+        <table style="background:rgb(125,125,125)" border="1px" width="100%">
+            <tr>
+                <td width="30%"> <label id="lbldni" for="dni">DNI: </label> </td>
+                <td width="70%"> <input class="control" type="number" name="dni" id="dni" placeholder="DNI"><br> </td>
+            </tr>
+            <tr>
+                <td><label for="nombre">Nombre:</label> </td>
+                <td><input class="control" type="text" name="nombre" id="nombre" maxlength="50" placeholder="Nombre"><br> </td>
+            </tr>
+            <tr>
+                <td><label>Apellido:</label> </td>
+                <td> <input class="control" type="text" name="apellido" id="apellido" maxlength="50" placeholder="Apellido"><br> </td>
+            </tr>
+            <tr>
+                <td> <label>E-Mail:</label> </td>
+                <td> <input class="control" type="email" name="email" id="email" maxlength="150" placeholder="e-mail"><br> </td>
+            </tr>
+            <tr>
+                <td colspan="2"> <button class="control" id="btnGuardar"
+                    width="100%"> Guardar</button> </td>
+            </tr>
+        </table>
+         <br />
+     </form>
+<script src="formulario.js"></script>
+</body>
+
+</html>
